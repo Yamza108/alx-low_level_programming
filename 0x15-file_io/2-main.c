@@ -4,8 +4,8 @@
 
 /**
  * main - check the code
- * @ac: int var
- * @av: pointer
+ * @ac: var int
+ * @av: pointer var
  * Return: Always 0.
  */
 int main(int ac, char **av)
@@ -17,7 +17,7 @@ int main(int ac, char **av)
 		dprintf(2, "Usage: %s filename text\n", av[0]);
 		exit(1);
 	}
-	res = create_file(av[1], av[2]);
+	res = append_text_to_file(av[1], av[2]);
 	printf("-> %i)\n", res);
 	return (0);
 }
